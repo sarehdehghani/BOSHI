@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BOSCH Parts | قطعات اصلی بوش</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <div class="container nav-in">
+    <a class="logo" href="#top"><b>BOSCH</b><small data-t="parts"></small></a>
+    <div class="menu"><a href="#shop" data-t="nShop"></a><a href="#history" data-t="nHist"></a><a href="#why" data-t="nWhy"></a></div>
+    <div class="sp"></div>
+    <button class="btn" id="langBtn" aria-label="Language">EN</button>
+    <button class="btn" id="themeBtn" aria-label="Theme">☀</button>
+    <button class="btn btn-red" id="cartBtn" aria-label="Cart">🛒<span class="badge" id="cartCount">0</span></button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="container hero-in">
+    <div>
+      <div class="eyebrow" data-t="eyebrow"></div>
+      <h1><span data-t="h1a"></span><br><em data-t="h1b"></em></h1>
+      <p data-t="sub"></p>
+      <div class="cta"><a class="btn btn-red btn-lg" href="#shop" data-t="cta"></a><a class="btn btn-lg" href="#history" data-t="cta2"></a></div>
+    </div>
+    <svg class="gear" viewBox="0 0 200 200" role="img" aria-label="gear">
+      <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c9a45c"/><stop offset="1" stop-color="#e20015"/></linearGradient></defs>
+      <g fill="none" stroke="url(#g)">
+        <circle cx="100" cy="100" r="62" stroke-width="14" stroke-dasharray="14 8.1"/>
+        <circle cx="100" cy="100" r="52" stroke-width="3"/>
+        <circle cx="100" cy="100" r="30" stroke-width="6"/>
+        <circle cx="100" cy="100" r="8" stroke-width="3"/>
+        <path d="M100 70v60M70 100h60M79 79l42 42M121 79l-42 42" stroke-width="2"/>
+      </g>
+    </svg>
+  </div>
+</header>
+
+<div class="stats"><div class="container grid4" id="stats"></div></div>
+
+<section id="shop"><div class="container">
+  <h2 data-t="shop"></h2>
+  <div class="tools">
+    <input type="search" id="q" data-ph="search">
+    <select id="sort"></select>
+  </div>
+  <div class="tools" id="cats"></div>
+  <div class="grid" id="grid"></div>
+  <p class="empty" id="none" data-t="none" hidden></p>
+</div></section>
+
+<section id="history" class="alt"><div class="container">
+  <h2 data-t="hist"></h2><p class="mu" data-t="histSub"></p>
+  <div class="timeline" id="timeline"></div>
+</div></section>
+
+<section id="why"><div class="container">
+  <h2 data-t="why"></h2>
+  <div class="grid4 feats" id="feats"></div>
+</div></section>
+
+<footer><div class="container foot">
+  <div><div class="logo"><b>BOSCH</b></div><small data-t="foot"></small></div>
+  <small>© 2026 · <span data-t="rights"></span></small>
+</div></footer>
+
+<div class="ov" id="cartOv" hidden><aside class="drawer" id="drawer"></aside></div>
+<div class="ov center" id="modalOv" hidden><div class="modal" id="modal"></div></div>
+<div class="toast" id="toast" hidden></div>
+
+<script src="script.js"></script>
+</body>
+</html>
